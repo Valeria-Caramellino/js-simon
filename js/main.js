@@ -66,16 +66,16 @@ function compareArray(array1, array2){
 
 //genero i numeri e li metto in un arrey mi assicuro che non ci siano doppioni
 function generaNumeri(numeriDaGenerare, massimoNumeri) {
-    let insiemeDi5Numeri = [];
-    while (insiemeDi5Numeri.length < numeriDaGenerare) {
+    let insiemeDiNumeri = [];
+    while (insiemeDiNumeri.length < numeriDaGenerare) {
         
         let nuovoNumero = getRandomNumber(1, massimoNumeri);
 
-        if( insiemeDi5Numeri.includes(nuovoNumero) == false ) {
-            insiemeDi5Numeri.push(nuovoNumero);
+        if( insiemeDiNumeri.includes(nuovoNumero) == false ) {
+            insiemeDiNumeri.push(nuovoNumero);
         }
     }
-    return insiemeDi5Numeri;
+    return insiemeDiNumeri;
 }
 
 //funzione genera numeri
