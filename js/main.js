@@ -31,9 +31,12 @@ let timer = setInterval(function() {
 setTimeout(function() {
     var utenteArray=[];
     var numeri;
-    for (let i = 0; i <= 4; i++) {
-        numeri= parseInt(prompt ("Inserisci i numeri che ti ricordi uno alla volta!")) ; 
-        utenteArray.push(numeri);
+    while (utenteArray.length < 5) {
+        numeri= parseInt(prompt ("Inserisci i numeri che ti ricordi uno alla volta!")) ;
+        if(utenteArray.includes(numeri)==false && numeri!="" && numeri!=null && numeri>0 ){
+            utenteArray.push(numeri);
+        } 
+        
     }
    console.log(utenteArray);
    console.log(numeriContenuti);
